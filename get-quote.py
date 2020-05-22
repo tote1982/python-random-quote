@@ -2,8 +2,8 @@ def principal():
   print("Keep it logically awesome.")
 
   f = open("quotes.txt","at")
-  print("Introduce frase: ")
-  item = input()
+
+  item=input("Introduce una frase: ")
   f.write(str(item) + "\n")
   f.close()
 
