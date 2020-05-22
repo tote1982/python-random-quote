@@ -1,3 +1,5 @@
+import random
+
 def principal():
 
     i = 0
@@ -29,8 +31,9 @@ def leer():
     f.close()
 
     items = len(quotes)
-    seleccion = input(f"Elige un numero del 1 al {items}: ")
-    i = int(seleccion) - 1
+    #seleccion = input(f"Elige un numero del 1 al {items}: ")
+    #i = int(seleccion) - 1
+    i = random.randint(0,items-1)
     print(quotes[i])
 
 
